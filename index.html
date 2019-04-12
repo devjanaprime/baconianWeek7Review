@@ -12,6 +12,7 @@
 <body>
     <h1>Baconian Wk 7 Review</h1>
     <div>
+        <h2>Add Item:</h2>
         <select id="sizeIn">
             <option>Tiny</option>
             <option>Small</option>
@@ -31,11 +32,28 @@
         <input type="text" placeholder="Description" id="descriptionIn">
         <button id="addItemButton">Add Item</button>
     </div>
+    <div id="filtering">
+        <h2>Filter:</h2>
+        <select id="sizeFilterIn">
+            <option>Tiny</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Huge</option>
+            <option>Gargantuan</option>
+        </select>
+        <select id="colorFilterIn">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Yellow</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Purple</option>
+        </select>
+        <button id="filterButton">Filter</button>
+    </div>
     <div id="outputDiv">
         <ul id="inventoryOut">
-            <li>SIZE, COLOR: DESCRIPTION</li>
-            <li>SIZE, COLOR: DESCRIPTION</li>
-            <li>SIZE, COLOR: DESCRIPTION</li>
         </ul>
     </div>
 </body>
