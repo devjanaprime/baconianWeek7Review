@@ -6,11 +6,14 @@ $( document ).ready( readyNow );
 function addItem(){
     console.log( 'in addItem' );
     // get user input
-    console.log( $( '#sizeIn' ).val() );
-    console.log( $( '#colorIn' ).val() );
-    console.log( $( '#descriptionIn' ).val() );
     // create a new object literal with the user input
+    const newItem = {
+        size: $( '#sizeIn' ).val(),
+        color: $( '#colorIn' ).val(),
+        description: $( '#descriptionIn' ).val()
+    } //end newItem
     // push the object into our inventory array
+    inventory.push( newItem );
     // display inventory on DOM
     console.log( 'inventory:', inventory );
 } // end addItem
